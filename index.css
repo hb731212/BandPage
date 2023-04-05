@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'extrabold';
+    src: url(fonts/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: 'bold';
+    src: url(fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'medium';
+    src: url(fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'regular';
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'light';
+    src: url(fonts/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: 'thin';
+    src: url(fonts/Roboto/Roboto-Thin.ttf);
+}
+
+
+
+@font-face {
+    font-family: 'extrabold1';
+    src: url(fonts/Podkova/static/Podkova-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'bold1';
+    src: url(fonts/Podkova/static/Podkova-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'semibold1';
+    src: url(fonts//Podkova/static/Podkova-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'medium1';
+    src: url(fonts/Podkova/static/Podkova-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'regular1';
+    src: url(fonts/Podkova/static/Podkova-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'regular2';
+    src: url(fonts/Capriola/Capriola-Regular.ttf);
+}
+
+
+body { padding: 0px; margin: 0px; background-color: #f4f7fc; /* #676A79;*/ border: solid black; height: 2000px; }
+body * { padding: 0px; margin: 0px; box-sizing: border-box; }
+
+.home-sidenav::-webkit-scrollbar { background-color: transparent; width: 5px; }
+.home-sidenav::-webkit-scrollbar-track { background-color: transparent; }
+.home-sidenav::-webkit-scrollbar-thumb { background-color: #9a9eab; }
+
+
+.home-sidenav { background-color: #fff; position: fixed; top: 0; height: 100vh; left: 0; width: 350px; overflow-y: scroll; overflow-x: hidden; border: none; }
+.home-sidenav-div { border: none; padding: 0em 0.5em; }
+.home-sidenav-div1 { border: none; margin: 1.5em 0em; }
+
+.home-sidenav-profile { border: none; }
+.home-sidenav-profilepic { border: none; height: 180px; position: relative; background-image: url(index.images/6.jpg); background-position: center; background-size: cover; margin-bottom: 3em; }
+.home-sidenav-profilepic > img { width: 100px; height: 100px; border-radius: 50px; border: solid #fff; position: absolute; left: 10%; bottom: -20%; }
+
+.home-sidenav-profilename { border: none; margin: 0.5em 0em; padding: 0em 1em; }
+.home-sidenav-profilename > p:first-child { font-family: 'bold1'; font-size: 1.8rem; color: #131516; display: inline-block; }
+.home-sidenav-profilename > p:last-child { font-family: 'bold1'; color: #676A79; line-height: 1.5em; color: #131516; display: inline-block; }
+
+.home-sidenav-profileabout { border: none;  margin: 0.5em 0em; padding: 0em 0.3em 0em 1em; }
+.home-sidenav-profileabout > p { font-family: 'bold1'; color: #676A79; display: inline-block; }
+
+.home-sidenav-profileactions { border: none; margin: 0.5em 0em; padding: 0em 0.5em; display: flex; }
+.home-sidenav-profileactions > div { border: none; flex: 1; text-align: center; }
+.home-sidenav-profileactions > div > p:first-child { font-family: 'bold1'; font-size: 1.5rem; }
+.home-sidenav-profileactions > div > p:last-child { font-family: 'bold1'; }
+
+
+.home-sidenav-profile-tmp { border: none; background-image: url(index.images/6.jpg); background-position: center; background-size: cover; border-radius: 20px; }
+.home-sidenav-profile-tmp > div { border: none; text-align: center; }
+.home-sidenav-profile-tmp > div > img { width: 85px; height: 85px; border-radius: 50px; border: solid #fff; margin:  10px 5px 5px 5px; }
+
+/*Side Nav div2...*/
+.home-sidenav-div2 { border: solid transparent; border-radius: 20px; box-shadow: 0px 0px 15px gainsboro; padding: 1em 0.5em; margin: 2em 0.5em; }
+.home-sidenav-div2 > a { text-decoration: none; border: none; border-radius: 20px; display: flex; align-items: center; gap: 0em; padding: 0.5em; margin-bottom: 0.5em; cursor: pointer; transition: all 0.3s ease-in 0s; position: relative; }
+.home-sidenav-div2 > a > div { width: 50px; height: 50px; padding: 10px; border-radius: 25px; background-color: #9a9eab; z-index: 10; transition: all 0.3s ease-in 0s; }
+.home-sidenav-div2 > a > div > img { width: 100%; }
+.home-sidenav-div2 > a > p { font-family: 'regular2'; font-size: 1.35rem; border: none; margin-left: -25px; padding: 0.2em 0.3em 0.2em 1.8em; width: 90%; border-radius: 25px; background-color: #fff; color: #011a27; display: inline-block; transition: all 0.3s ease-in 0s; }
+
+.home-sidenav-div2 > a:hover { background-color: #011a27; }
+.home-sidenav-div2 > a:hover > div { background-color: #fff; }
+.home-sidenav-div2 > a:hover > p { letter-spacing: 1.5px; }
+.home-sidenav-div2 > a:active > div  { transform: translate(100%); -webkit-transform: translate(100%); }
+.home-sidenav-div2 > a:hover > span { background-color: #011a27; color: #fff; }
+.home-sidenav-div2 > a:active > span { transform: translate(50%); -webkit-transform: translate(50%); }
+
+
+/*Side Nav div3...*/
+.home-sidenav-div3 { height: 200px; background-color: #011a27; margin: 1em 0em; }
+
+
+/*...sidenav toggel..*/
+.home-sidenav-toggle { position: fixed; top: 20px; right: 20px; cursor: pointer; }
+.home-sidenav-toggle > img { background-color: #011a27; padding: 10px; width: 40px; height: 40px; border-radius: 30px; }
+
+@keyframes navkey {
+    from { width: 350px; }
+    to { width: 125px; }
+}
+.nav-width {  animation: navkey 0.3s ease-in 0s 1 normal both; }
+.display-none { display: none !important; }
+
+/*....*/
+.home-sidenav-div2-link-span { z-index: 20; position: absolute; right: 15px; font-family: 'regular2'; font-size: 1.15rem; padding: 2px 10px 4px 10px; border-radius: 15px; background-color: #011a27; color: #fff; transition: all 0.3s ease-in 0s; }
+.home-sidenav-div2-link-span1 { z-index: 20; position: absolute; left: 40px; top: -5px; font-family: 'regular2'; font-size: 1.15rem; padding: 3px 10px 5px 10px; border-radius: 25px; background-color: #fff; color: #011a27; transition: all 0.3s ease-in 0s; }
+
